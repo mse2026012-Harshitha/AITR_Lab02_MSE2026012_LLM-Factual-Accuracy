@@ -1,0 +1,16 @@
+{
+  "status": "PASSED",
+  "python_version": "3.13.7",
+  "platform": "Windows-AMD64",
+  "gpu_available": false,
+  "directories_verified": true,
+  "seed_control_verified": true,
+  "installed_packages": {
+    "numpy": "Installed (v2.5.5)",
+    "pandas": "Installed (v3.1.1)",
+    "sklearn": "Installed (v1.9.1)",
+    "rank_bm25": "Installed (vInstalled)",
+    "tqdm": "Installed (v4.70.1)",
+    "tabulate": "Installed (v0.10.0)"
+  }
+}

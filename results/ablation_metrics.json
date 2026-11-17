@@ -1,0 +1,198 @@
+[
+  {
+    "regime": "Arm 1: Unmodified Baseline",
+    "sample_count": 300,
+    "stance_accuracy": 0.4133,
+    "stance_macro_f1": 0.2719,
+    "per_class": {
+      "SUPPORT": {
+        "precision": 0.4275,
+        "recall": 0.9032,
+        "f1": 0.5803
+      },
+      "CONTRADICT": {
+        "precision": 0.2973,
+        "recall": 0.1719,
+        "f1": 0.2178
+      },
+      "NOT_ENOUGH_INFO": {
+        "precision": 1.0,
+        "recall": 0.0089,
+        "f1": 0.0177
+      }
+    },
+    "confusion_matrix": [
+      [
+        112,
+        12,
+        0
+      ],
+      [
+        53,
+        11,
+        0
+      ],
+      [
+        97,
+        14,
+        1
+      ]
+    ],
+    "ece": 0.3578,
+    "mean_rationale_f1": 0.3075,
+    "unfaithful_reasoning_rate": 0.3306,
+    "error_taxonomy": {
+      "type_1_retrieval_failure": 0,
+      "type_2_stance_flip": 65,
+      "type_3_unfaithful_rationale": 41,
+      "type_4_overconfident_error": 43
+    }
+  },
+  {
+    "regime": "Arm 2: Confidence Only (tau=0.70)",
+    "sample_count": 300,
+    "stance_accuracy": 0.4333,
+    "stance_macro_f1": 0.3443,
+    "per_class": {
+      "SUPPORT": {
+        "precision": 0.4409,
+        "recall": 0.7823,
+        "f1": 0.564
+      },
+      "CONTRADICT": {
+        "precision": 0.2692,
+        "recall": 0.1094,
+        "f1": 0.1556
+      },
+      "NOT_ENOUGH_INFO": {
+        "precision": 0.4815,
+        "recall": 0.2321,
+        "f1": 0.3133
+      }
+    },
+    "confusion_matrix": [
+      [
+        97,
+        10,
+        17
+      ],
+      [
+        46,
+        7,
+        11
+      ],
+      [
+        77,
+        9,
+        26
+      ]
+    ],
+    "ece": 0.3378,
+    "mean_rationale_f1": 0.3075,
+    "unfaithful_reasoning_rate": 0.2,
+    "error_taxonomy": {
+      "type_1_retrieval_failure": 0,
+      "type_2_stance_flip": 56,
+      "type_3_unfaithful_rationale": 26,
+      "type_4_overconfident_error": 43
+    }
+  },
+  {
+    "regime": "Arm 3: Rationale Gating Only (theta=0.35)",
+    "sample_count": 300,
+    "stance_accuracy": 0.49,
+    "stance_macro_f1": 0.4054,
+    "per_class": {
+      "SUPPORT": {
+        "precision": 0.469,
+        "recall": 0.8548,
+        "f1": 0.6057
+      },
+      "CONTRADICT": {
+        "precision": 0.3226,
+        "recall": 0.1562,
+        "f1": 0.2105
+      },
+      "NOT_ENOUGH_INFO": {
+        "precision": 0.7209,
+        "recall": 0.2768,
+        "f1": 0.4
+      }
+    },
+    "confusion_matrix": [
+      [
+        106,
+        12,
+        6
+      ],
+      [
+        48,
+        10,
+        6
+      ],
+      [
+        72,
+        9,
+        31
+      ]
+    ],
+    "ece": 0.3327,
+    "mean_rationale_f1": 0.3075,
+    "unfaithful_reasoning_rate": 0.2585,
+    "error_taxonomy": {
+      "type_1_retrieval_failure": 0,
+      "type_2_stance_flip": 60,
+      "type_3_unfaithful_rationale": 38,
+      "type_4_overconfident_error": 43
+    }
+  },
+  {
+    "regime": "Arm 4: Proposed Dual-Gated R-GEV",
+    "sample_count": 300,
+    "stance_accuracy": 0.4967,
+    "stance_macro_f1": 0.4153,
+    "per_class": {
+      "SUPPORT": {
+        "precision": 0.4796,
+        "recall": 0.7581,
+        "f1": 0.5875
+      },
+      "CONTRADICT": {
+        "precision": 0.3043,
+        "recall": 0.1094,
+        "f1": 0.1609
+      },
+      "NOT_ENOUGH_INFO": {
+        "precision": 0.5926,
+        "recall": 0.4286,
+        "f1": 0.4974
+      }
+    },
+    "confusion_matrix": [
+      [
+        94,
+        10,
+        20
+      ],
+      [
+        44,
+        7,
+        13
+      ],
+      [
+        58,
+        6,
+        48
+      ]
+    ],
+    "ece": 0.326,
+    "mean_rationale_f1": 0.3075,
+    "unfaithful_reasoning_rate": 0.1678,
+    "error_taxonomy": {
+      "type_1_retrieval_failure": 0,
+      "type_2_stance_flip": 54,
+      "type_3_unfaithful_rationale": 25,
+      "type_4_overconfident_error": 43
+    }
+  }
+]

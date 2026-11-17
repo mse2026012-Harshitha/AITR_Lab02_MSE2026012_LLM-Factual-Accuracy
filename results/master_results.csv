@@ -1,0 +1,5 @@
+System / Arm,Stance Macro-F1,Stance Accuracy,Rationale F1,Unfaithful Rate (%),ECE,p-value vs Baseline
+Arm 1: Unmodified Baseline,0.2719,0.4133,0.3075,33.06%,0.3578,N/A (Control)
+Arm 2: Confidence Only (tau=0.70),0.3443,0.4333,0.3075,20.00%,0.3378,N/A
+Arm 3: Rationale Gating Only (theta=0.35),0.4054,0.4900,0.3075,25.85%,0.3327,N/A
+Arm 4: Proposed Dual-Gated R-GEV,0.4153,0.4967,0.3075,16.78%,0.3260,0.00000

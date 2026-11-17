@@ -1,0 +1,7 @@
+{
+  "observed_difference": 0.1433,
+  "ci_95_lower": 0.0934,
+  "ci_95_upper": 0.192,
+  "p_value": 0.0,
+  "statistically_significant": true
+}
